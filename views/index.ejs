@@ -5,6 +5,12 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <h1>Welcome to the Express + EJS App!</h1>
+  <div>
+    <% for (let i=0; i< messages.length; i++){ %>
+        <h1>User: <%= messages[i].user %></h1>
+        <h3>Message: <%= messages[i].text %></h3>
+        <p>Added: <%= messages[i].added %></p>
+    <% } %>
+  </div>
 </body>
 </html>

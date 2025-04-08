@@ -12,10 +12,24 @@ app.set('views', path.join(__dirname, 'views'));
 const assetsPath = path.join(__dirname, "public");
 app.use(express.static(assetsPath));
 
-//Just for the sake of it
+const messages = [
+    {
+      text: "Hi there!",
+      user: "Amando",
+      added: new Date()
+    },
+    {
+      text: "Hello World!",
+      user: "Charles",
+      added: new Date()
+    }
+  ];  
+
+//Index Route
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Home Page' });
+    res.render('index', { title: "Mini Messageboard", messages: messages });
 });
+
 
 // Start server
 app.listen(port, () => {
