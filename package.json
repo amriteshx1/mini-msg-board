@@ -1,0 +1,24 @@
+{
+  "name": "mini-msg-board",
+  "version": "1.0.0",
+  "description": "A simple Node.js and Express app that lets users post and view messages in a minimal message board format. Built as a hands-on project to practice server-side rendering and form handling with EJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amriteshx1/mini-msg-board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amriteshx1/mini-msg-board/issues"
+  },
+  "homepage": "https://github.com/amriteshx1/mini-msg-board#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
