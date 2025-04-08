@@ -3,19 +3,22 @@
 <head>
   <title><%= title %></title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div>
+  <div class="container2">
     <p>New Message</p>
     <form method="post" action="/new">
-      <div>
+      <div class="miniCnt3">
         <label for="username">Username:</label>
-        <input type="text" name="userName" id="username">
+        <input type="text" name="userName" id="username" required>
       </div>
 
-      <div>
+      <div class="miniCnt3">
         <label for="msg">Message:</label>
-        <input type="text" name="userMsg" id="msg">
+        <input type="text" name="userMsg" id="msg" required>
       </div>
       <button>Submit</button>
     </form>
