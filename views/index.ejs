@@ -2,6 +2,7 @@
 <html>
 <head>
   <title><%= title %></title>
+  <link rel="icon" href="/favicomm.ico" type="image/x-icon">
   <link rel="stylesheet" href="/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +15,8 @@
     <% for (let i=0; i< messages.length; i++){ %>
       <div class="miniCnt2">
         <h1>User: <%= messages[i].user %></h1>
-        <h3>Message: <%= messages[i].text %></h3>
-        <p>Added: <%= messages[i].added %></p>
+        <h2>Message: <%= messages[i].text %></h2>
+        <h3>Added: <%= messages[i].added %></h3>
       </div>
     <% } %>
     </div>
