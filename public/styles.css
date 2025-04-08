@@ -17,7 +17,7 @@ body{
     align-items: center;
 }
 
-.container1, .container2{
+.container1, .container2, .msgDetail{
     height: 100%;
     width: 100%;
     display: flex;
@@ -90,3 +90,19 @@ button{
     cursor: pointer;
 }
 
+.btn{
+    font-size: 1.4vw;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.msgDetail{
+    gap: 5vh;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+.msgDetail p{
+    font-size: 3vw;
+    color: wheat;
+}

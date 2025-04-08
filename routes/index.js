@@ -32,4 +32,12 @@ router.post('/new', (req, res) => {
     res.redirect("/");
 });
 
+// Open message
+router.get('/message/:id', (req, res) => {
+  const id = req.params.id;
+  const msg = messages[id];
+  if (!msg) return res.status(404).send("Message not found");
+  res.render('msg', { title: "Mini Messageboard", message: msg });
+});
+
 module.exports = router;
