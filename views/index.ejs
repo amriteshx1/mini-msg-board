@@ -3,14 +3,22 @@
 <head>
   <title><%= title %></title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div>
+  <div class="container1">
+    <a href="/new">Add a new message</a>
+    <div class="miniCnt1">
     <% for (let i=0; i< messages.length; i++){ %>
+      <div class="miniCnt2">
         <h1>User: <%= messages[i].user %></h1>
         <h3>Message: <%= messages[i].text %></h3>
         <p>Added: <%= messages[i].added %></p>
+      </div>
     <% } %>
+    </div>
   </div>
 </body>
 </html>

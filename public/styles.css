@@ -1,5 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
 body{
-    font-family: serif;
-    background-color: wheat;
-    color: black;
+    font-family: 'Iceberg', serif;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Index*/
+.container1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10vh;
+    gap: 5vh;
+}
+.miniCnt1, .miniCnt2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.miniCnt2{
+    width: auto;
+    gap: 1.5vh;
+    border: 2px solid gray;
+    padding: 2vh;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    font-size: 2vw;
+    color: wheat;
+}
+a:hover{
+    color: gray;
+}
+
+/*Form*/
+.container2{
+    
 }
