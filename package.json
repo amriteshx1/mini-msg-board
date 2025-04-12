@@ -4,8 +4,8 @@
   "description": "A simple Node.js and Express app that lets users post and view messages in a minimal message board format. Built as a hands-on project to practice server-side rendering and form handling with EJS.",
   "main": "index.js",
   "scripts": {
-  "start": "node app.js",
-  "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/amriteshx1/mini-msg-board#readme",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "pg": "^8.14.1"
   }
 }
