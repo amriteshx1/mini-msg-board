@@ -14,7 +14,7 @@
     <div class="miniCnt1">
     <% for (let i=0; i< messages.length; i++){ %>
       <div class="miniCnt2">
-        <h1>User: <%= messages[i].user %></h1>
+        <h1>User: <%= messages[i].username %></h1>
         <h2>Message: <%= messages[i].text %></h2>
         <h3>Added: <%= messages[i].added %></h3>
         <a href="/message/<%= i %>" class="btn">Open</a>
