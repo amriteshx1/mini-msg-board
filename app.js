@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 const indexRouter = require('./routes/index');
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Set view engine
 app.set('view engine', 'ejs');
@@ -18,6 +18,6 @@ app.use(express.static(assetsPath));
 app.use('/', indexRouter);
 
 // Start server
-app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
-  });
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server is running on port ${port}`);
+});
