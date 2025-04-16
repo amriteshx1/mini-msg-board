@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 body,html{
     min-height: 100%;
@@ -146,5 +147,57 @@ button{
     }
     .msgDetail p{
         font-size: 2.5vh;
+    }
+}
+
+/* Responsive for Mobiles */
+@media (max-width: 499px){
+    .container1, .container2, .msgDetail{
+        padding: 3vh;
+        gap: 3vh;
+    }
+    .miniCnt1, .miniCnt2, form{
+        gap: 2vh;
+    }
+    .miniCnt2{
+        gap: 1.1vh;
+        padding: 1.7vh;
+    }
+    a{
+        font-size: 2.5vh;
+    }
+    .container2{
+        width: 70%;
+    }
+    .container2 > p{
+        font-size: 2.3vh;
+    }
+    form{
+        gap: 1.8vh;
+    }
+    label, input, button{
+        font-size: 1.8vh;
+    }
+    input, button {
+        height: 3vh;
+    }
+    .btn{
+        font-size: 1.6vh;
+    }
+    .msgDetail{
+        gap: 2.2vh;
+        padding: 3vh;
+    }
+    .msgDetail p{
+        font-size: 2.3vh;
+    }
+    .msgDetail h1{
+        font-size: 2.2vh;
+    }
+    .msgDetail h2{
+        font-size: 2vh;
+    }
+    .msgDetail h3{
+        font-size: 1.8vh;
     }
 }
