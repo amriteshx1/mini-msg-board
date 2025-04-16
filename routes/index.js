@@ -33,7 +33,6 @@ router.get('/message/:id', async (req, res) => {
     const msg = result.rows[0];
     if (!msg) return res.status(404).send("Message not found");
 
-    console.log(msg);
     res.render('msg', {
       title: "Mini Messageboard",
       message: msg
